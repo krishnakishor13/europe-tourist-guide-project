@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .europa-logo {
+  width: 50%;
+}
+
+header .menu {
+  width: 50%;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 10px;
+  font-size: 10px;
+}
+
+/* header .menu img {
+    display: none;
+} */
+
+header .menu a:hover {
+  color: #15c9cb;
+}
+
+/* @media screen and(max-width:780px) {
+    header .menu img {
+        display: block;
+    }
+} */
+
+.bg-img img {
+  width: 100%;
+}
+
+.bg-img {
+  position: relative;
+}
+
+.bg-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+}
+
+.bg-mask h2 {
+  text-shadow: 1px 2px 5px #413e3e;
+  font-weight: lighter;
+  /* padding: 10px 5px; */
+}
+
+.bg-mask input {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bg-mask input::placeholder {
+  font-size: 8px;
+  text-align: center;
+}
+
+.grid-row {
+  text-align: center;
+  padding: 15px;
+}
+
+.grid-images {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Top Attractions */
+
+.attractions {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}

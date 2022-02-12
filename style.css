@@ -82,16 +82,15 @@ header .menu a:hover {
 }
 
 .grid-images {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
   padding: 10px;
 }
 
-/* Top Attractions */
-
-.attractions {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: center;
+.grid-images img:hover {
+    width: 50%;
+    transition: transform .2s;
 }
+
+/* Top Attractions */

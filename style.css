@@ -91,6 +91,12 @@ header .menu a:hover {
   white-space: nowrap;
   padding: 10px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-images img {
+  padding: 0px 20px;
 }
 
 .map-img img {

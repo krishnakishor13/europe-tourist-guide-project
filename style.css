@@ -236,7 +236,8 @@ footer {
   grid-template-columns: auto auto;
   width:100%;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  grid-gap: 30px;
 }
 
 .figures figcaption {

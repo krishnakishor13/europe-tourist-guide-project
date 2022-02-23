@@ -198,6 +198,27 @@ bottom-menu p {
   font-weight: bold;
 }
 
+.map-img .shorter img {
+  width: 15%;
+  padding: 0px 10px;
+}
+
+.map-img {
+  position: relative;
+}
+
+.map-img .place-banner img {
+  position: relative;
+}
+
+.map-img .shorter {
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  justify-content: end;
+  width: 100%;
+}
+
 /* $$$$ Footer $$$$ */
 
 footer {

@@ -12,11 +12,16 @@ header {
 }
 
 header .europa-logo {
-  width: 50%;
+  width: 60%;
 }
 
 header .menu {
-  width: 50%;
+  width: 40%;
+}
+
+header .menu-img img {
+  padding: 0px 10px;
+  display: none;
 }
 
 header .menu a {
@@ -26,19 +31,18 @@ header .menu a {
   font-size: 10px;
 }
 
-/* header .menu img {
-    display: none;
-} */
-
 header .menu a:hover {
   color: #15c9cb;
 }
 
-/* @media screen and(max-width:780px) {
-    header .menu img {
-        display: block;
-    }
-} */
+@media screen and (max-width: 1022px) {
+  header .menu-img img {
+    display: inline;
+  }
+  header .menu {
+    display: none;
+  }
+}
 
 .bg-img img {
   width: 100%;
@@ -89,6 +93,111 @@ header .menu a:hover {
   text-align: center;
 }
 
+.map-img img {
+  width: 100%;
+  display: block;
+}
 
+/* bottom-menu */
 
-/* Top Attractions */
+bottom-menu {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+}
+
+bottom-menu ul {
+  font-weight: bold;
+  list-style-type: none;
+  padding: 10px 0px;
+}
+
+bottom-menu ul li {
+  font-weight: lighter;
+  font-size: 12px;
+  padding: 5px 0px;
+}
+
+bottom-menu .bottom-menu-menu {
+  display: flex;
+  align-items: center;
+}
+
+bottom-menu .menu-1 {
+  padding: 0px 10px;
+}
+
+bottom-menu .bottom-menu-search {
+  position: relative;
+}
+
+bottom-menu .bottom-menu-search img {
+  position: absolute;
+  width: 18px;
+  right: 0px;
+  top: 2px;
+}
+
+bottom-menu input {
+  border: none;
+  width: 78px;
+}
+
+bottom-menu input::placeholder {
+  font-size: 8px;
+  padding: 5px;
+}
+
+bottom-menu p {
+  font-size: 10px;
+  padding: 5px 0px;
+}
+
+@media screen and (max-width: 400px) {
+  bottom-menu ul {
+    font-size: 12px;
+  }
+  bottom-menu ul li {
+    font-size: 8px;
+  }
+  bottom-menu .bottom-menu-search img {
+    width: 19px;
+  }
+  .places p {
+    font-size: 12px;
+  }
+  .places h1 {
+    font-size: 20px;
+  }
+}
+
+/* $$$$ Places Page $$$$ */
+
+.places {
+  width: 100%;
+}
+
+.places p {
+  padding: 30px;
+}
+
+.places h1 {
+  padding: 10px 30px;
+}
+
+.places .bold {
+  font-weight: bold;
+}
+
+/* $$$$ Footer $$$$ */
+
+footer {
+  border-top: 1px solid white;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 10px 0px;
+}

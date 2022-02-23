@@ -228,3 +228,23 @@ footer {
   text-align: center;
   padding: 10px 0px;
 }
+
+/* $$$$ Index Page $$$$ */
+
+.figures {
+  display: grid;
+  grid-template-columns: auto auto;
+  width:100%;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.figures figcaption {
+  padding: 10px 0px;
+}
+
+.figures figcaption p{
+  font-weight: lighter;
+  font-size: 10px;
+}
+

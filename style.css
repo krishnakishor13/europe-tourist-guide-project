@@ -245,6 +245,7 @@ footer {
 .figures figure img {
   box-shadow: 0px 70px 1px whitesmoke;
   position: relative;
+  padding: 0px 0px 30px 0px;
 }
 
 figure {
@@ -262,35 +263,77 @@ figure .like img {
 }
 
 .figures figcaption {
-  padding: 10px 0px;
+  padding: 0px 20px;
   position: absolute;
 }
 
 .figures figcaption p {
   font-weight: lighter;
   font-size: 10px;
+  padding: 5px 0px;
 }
 
-@media screen and (max-width:1790px) {
+@media screen and (max-width: 1790px) {
   .figures {
     grid-template-columns: 100px;
   }
-  
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .figures figure img {
     width: 60vh;
   }
-  
 }
 
-@media screen and (max-width:440px) {
+@media screen and (max-width: 440px) {
   .figures figure img {
     width: 40vh;
   }
   .grid-images img {
     width: 40%;
+  }
+}
+
+.video {
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.video img {
+  display: block;
+  width: 100vw;
+  position: absolute;
+}
+
+.pop-video img {
+  position: relative;
+  width: 50%;
+}
+
+#pop {
+  padding: 10px 0px;
+}
+
+#pop img {
+  left: 29vw;
+  top: 3px;
+  width: 40%;
+}
+
+#pop figcaption {
+  text-align: center;
+  color: white;
+}
+
+#pop figcaption img {
+  width: 5%;
+  position: inherit;
+}
+
+@media screen and (max-width:500px) {
+  #pop figcaption {
+    font-size: 8px;
   }
   
 }

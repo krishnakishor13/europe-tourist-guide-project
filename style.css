@@ -284,3 +284,13 @@ figure .like img {
   }
   
 }
+
+@media screen and (max-width:440px) {
+  .figures figure img {
+    width: 40vh;
+  }
+  .grid-images img {
+    width: 40%;
+  }
+  
+}

@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway";
+  }
+  
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .europa-logo {
+    width: 60%;
+  }
+  
+  header .menu {
+    width: 40%;
+  }
+  
+  header .menu-img img {
+    padding: 0px 10px;
+    display: none;
+  }
+  
+  header .menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+    font-size: 10px;
+  }
+  
+  header .menu a:hover {
+    color: #15c9cb;
+  }
+  
+  @media screen and (max-width: 1022px) {
+    header .menu-img img {
+      display: inline;
+    }
+    header .menu {
+      display: none;
+    }
+  }
+  
+  .bg-img img {
+    width: 100%;
+  }
+  
+  .bg-img {
+    position: relative;
+  }
+  
+  .bg-mask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+  }
+  
+  .bg-mask h2 {
+    text-shadow: 1px 2px 5px #413e3e;
+    font-weight: lighter;
+    /* padding: 10px 5px; */
+  }
+  
+  .bg-mask input {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .bg-mask input::placeholder {
+    font-size: 8px;
+    text-align: center;
+  }
+  
+  .grid-row {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .grid-images {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .grid-images img {
+    padding: 0px 20px;
+  }
+  
+  .map-img img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* bottom-menu */
+  
+  bottom-menu {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+  }
+  
+  bottom-menu ul {
+    font-weight: bold;
+    list-style-type: none;
+    padding: 10px 0px;
+  }
+  
+  bottom-menu ul li {
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 5px 0px;
+  }
+  
+  bottom-menu .bottom-menu-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  bottom-menu .menu-1 {
+    padding: 0px 10px;
+  }
+  
+  bottom-menu .bottom-menu-search {
+    position: relative;
+  }
+  
+  bottom-menu .bottom-menu-search img {
+    position: absolute;
+    width: 18px;
+    right: 0px;
+    top: 2px;
+  }
+  
+  bottom-menu input {
+    border: none;
+    width: 78px;
+  }
+  
+  bottom-menu input::placeholder {
+    font-size: 8px;
+    padding: 5px;
+  }
+  
+  bottom-menu p {
+    font-size: 10px;
+    padding: 5px 0px;
+  }
+  
+  @media screen and (max-width: 400px) {
+    bottom-menu ul {
+      font-size: 12px;
+    }
+    bottom-menu ul li {
+      font-size: 8px;
+    }
+    bottom-menu .bottom-menu-search img {
+      width: 19px;
+    }
+    .places p {
+      font-size: 12px;
+    }
+    .places h1 {
+      font-size: 20px;
+    }
+  }
+  
+  /* $$$$ Places Page $$$$ */
+  
+  .places {
+    width: 100%;
+  }
+  
+  .places p {
+    padding: 30px;
+  }
+  
+  .places h1 {
+    padding: 10px 30px;
+  }
+  
+  .places .bold {
+    font-weight: bold;
+  }
+  
+  .map-img .shorter img {
+    width: 15%;
+    padding: 0px 10px;
+  }
+  
+  .map-img {
+    position: relative;
+  }
+  
+  .map-img .place-banner img {
+    position: relative;
+  }
+  
+  .map-img .shorter {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    justify-content: end;
+    width: 100%;
+  }
+  
+  /* $$$$ Footer $$$$ */
+  
+  footer {
+    border-top: 1px solid white;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  
+  /* $$$$ Index Page $$$$ */
+  
+  .figures {
+    width: 100%;
+    display: grid;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+    grid-template-columns: 100px 100px;
+    grid-auto-rows: auto;
+  }
+  
+  .figures figure img {
+    box-shadow: 0px 70px 1px whitesmoke;
+    position: relative;
+    padding: 0px 0px 30px 0px;
+  }
+  
+  figure {
+    padding: 30px 0px;
+    position: relative;
+  }
+  
+  figure .like img {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    right: 10px;
+    box-shadow: none;
+    width: 25px !important;
+  }
+  
+  .figures figcaption {
+    padding: 0px 20px;
+    position: absolute;
+  }
+  
+  .figures figcaption p {
+    font-weight: lighter;
+    font-size: 10px;
+    padding: 5px 0px;
+  }
+  
+  @media screen and (max-width: 1790px) {
+    .figures {
+      grid-template-columns: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .figures figure img {
+      width: 60vh;
+    }
+  }
+  
+  @media screen and (max-width: 440px) {
+    .figures figure img {
+      width: 40vh;
+    }
+    .grid-images img {
+      width: 40%;
+    }
+  }
+  
+  .video {
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .video img {
+    display: block;
+    width: 100vw;
+    position: absolute;
+  }
+  
+  .pop-video img {
+    position: relative;
+    width: 50%;
+  }
+  
+  #pop {
+    padding: 10px 0px;
+  }
+  
+  #pop img {
+    left: 30vw;
+    top: 3px;
+    width: 40%;
+    display: block;
+  }
+  
+  #pop figcaption {
+    text-align: center;
+    color: white;
+  }
+  
+  #pop figcaption img {
+    width: 5%;
+    position: relative;
+    left: 47.5vw;
+    padding: 6px 0px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    #pop figcaption {
+      font-size: 8px;
+    }
+  }
+  
+  .offer img {
+    display: block;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .offer {
+    position: absolute;
+    width: 100%;
+  }
+  
+  .offer-details {
+    position: relative;
+    top: 6vw;
+    color: white;
+  }
+  
+  .offer-details h3,
+  p {
+    text-align: center;
+    padding: 5px 0px 0px;
+  }
+  
+  .email {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+  }
+  
+  .email input {
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .email button {
+    border: none;
+    padding: 0px 20px;
+    border-radius: 15px;
+  }
+  
+  .home-map {
+    width: 100%;
+  }
+  
+  .home-map img {
+    width: 100%;
+    display: block;
+    height: 50vw;
+  }
+  
+  @media screen and (max-width:500px) {
+    .email {
+      padding: 3px 0px;
+    }
+    .email input {
+      padding: 3px;
+      width: 30%;
+    }
+    .offer-details {
+      top: 2vw;
+    }
+    .email button {
+      padding: 0px 10px;
+    }
+    
+  }
